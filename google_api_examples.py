@@ -131,16 +131,11 @@ def main():
     # Example usage - replace with actual values
     directions_data = handler.get_directions('HSR Layout, Bangalore, Karnataka', 'ITI Layout, Bangalore, Karnataka')
     handler.get_polyline_points(directions_data)
-    # distance_matrix_data = handler.get_distance_matrix('HSR Layout, Bangalore, Karnataka', 'ITI Layout, Bangalore, Karnataka')
-    # handler.get_geocode('HSR Layout, Bangalore, Karnataka')
-    # handler.get_maps_javascript()
-                    # handler.get_roads('12.934533,77.626579|12.934534,77.626580')
-                    # handler.get_routes('HSR Layout, Bangalore, Karnataka', 'ITI Layout, Bangalore, Karnataka')
-    # handler.get_route_optimization('waypoint1|waypoint2|waypoint3')
+    distance_matrix_data = handler.get_distance_matrix('HSR Layout, Bangalore, Karnataka', 'ITI Layout, Bangalore, Karnataka')
+    handler.get_geocode('HSR Layout, Bangalore, Karnataka')
+    handler.get_maps_javascript()
+    handler.get_route_optimization('waypoint1|waypoint2|waypoint3')
 
-    # Time taken between points
-    # time_taken = handler.get_time_between_points('HSR Layout, Bangalore, Karnataka', 'ITI Layout, Bangalore, Karnataka')
-    # print(f"Time taken: {time_taken / 60:.2f} minutes")
 
 if __name__ == '__main__':
     main()

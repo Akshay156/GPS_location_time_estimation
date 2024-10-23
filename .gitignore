@@ -3,4 +3,6 @@
 *.html
 *.pyc
 *.js
-./lib
+lib
+bin
+*.cfg
